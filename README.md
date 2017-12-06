@@ -140,25 +140,27 @@ If there is no file in the current folder named lab1.py, then gedit will create 
 
 Enter the following simple program into this new window:  you must follow the format, indentation and capitalization EXACTLY! You may use spaces or tabs, but you have to be consistent. NOTE: Be aware that if you will be working on a windows machine at home, spaces are more cross platform compatible.
 
-**def main():**
+```python
+def main():
+   
+   weeks_str = input("Please enter the number of weeks this semester:  ")
 
-**weeks_str = input("Please enter the number of weeks this semester:  ")**
+   classes_str = input("Enter the number of classes you are taking:  ")
 
-**classes_str = input("Enter the number of classes you are taking:  ")**
+   tuition_str = input("Please enter your tuition:  ")
 
-**tuition_str = input("Please enter your tuition:  ")**
+   weeks = int(weeks_str)
 
-**weeks = int(weeks_str)**
+   classes = int(classes_str)
 
-**classes = int(classes_str)**
+   tuition = int(tuition_str)
 
-**tuition = int(tuition_str)**
+   cost_per_week = ((tuition / classes) / weeks)
 
-**cost_per_week = ((tuition / classes) / weeks)**
+   print("Cost per week:", cost_per_week)
 
-**print("Cost per week:", cost_per_week)**
-
-**main()**
+main()
+```
 
 * Run your program by saving your file as lab1.py, and typing the following command
 
