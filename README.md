@@ -3,11 +3,11 @@
 CS 110 - Fall 2017
 Due Date: **5:00 p.m., Aug 31st, 2017**
 
-*All programs will be tested on the machines in the LNG103 lab. If your code does not run on the system in this lab, it is considered non-functioning EVEN IF IT RUNS ON YOUR PERSONAL COMPUTER. Always check that your code runs on the lab machines before submitting.*
+* All programs will be tested on the machines in the LNG103 lab. If your code does not run on the system in this lab, it is considered non-functioning *even if it runs on your personal computer*. Always check that your code runs on the lab machines before submitting.*
 
 ### Driver Code and Test Files
 
-* lab1.py
+* `lab1.py`
 
 ### Grading Rubric
 
@@ -30,75 +30,75 @@ You may research online for additional resources; however, you may not use code 
 
 Log into a machine using your PODS user id and password. (If you're reading this online in the lab, you've probably succeeded in doing this already.) Locate and launch a "terminal". We will call this, inter-changeably, a **terminal**, **shell**, or **command line**. The shell will accept and execute Linux commands, of which there are hundreds. We'll learn a few today, and I'll try to introduce you to more and more throughout the semester. You will need to get used to using the terminal, so don’t be afraid of it. You can’t ‘hurt’ the computer from the terminal.
 
-The Linux help system is accessible through the system man pages. This is standard on all Unix/Linux distributions. "man" is short for "manual" (but the command is "man"). To access the man pages for a particular command, at the command prompt type the command "man" (without quotes) followed by the command you are interested in, followed by the <ENTER> key.
+The Linux help system is accessible through the system `man` pages. This is standard on all Unix/Linux distributions. `man` is short for "manual" (but the command is `man`). To access the `man` pages for a particular command, at the command prompt type the command `man` followed by the command you are interested in, followed by the <ENTER> key.
 * The basic format of entering commands in the terminal is:
     * *command* -*options* *args*
         * *command* : starts a program, just like clicking on an icon in the windowed environment
         * *option* : optional configuration flags that change the way the program runs. Usually preceded by a dash, -.
         * *args* : arguments the program needs to run, such as a key or filename
-* For example, to read about the "pwd" command, type ‘man pwd’
-    * This will open up the man program and display the help information for the pwd command. In the man page environment, to go forward and look at additional information that does not fit on the first screen, press the **ENTER** key.
-* To exit the man page program, type the letter *q*.
-* We will be using the following commands often, so review them in the man pages:
-    * man
-    * pwd
-    * mkdir
-    * rm
-    * cd
-    * ls
-    * mv
-    * cp
-    * python3
+* For example, to read about the `pwd` command, type `man pwd`
+   * This will open up the `man` program and display the help information for the `pwd` command. In the `man` page environment, to go forward and look at additional information that does not fit on the first screen, press the <ENTER> key.
+* To exit the man page program, type the letter `q`.
+* We will be using the following commands often, so review them in the `man` pages:
+    * `man`
+    * `pwd`
+    * `mkdir`
+    * `rm`
+    * `cd`
+    * `ls`
+    * `mv`
+    * `cp`
+    * `python3`
 
 ### Using Linux Commands
 
 Next, you will begin running and using some of the commands you learned about in the previous section above. In particular, complete the following steps:
-* On the command line, type: cd ~
+* On the command line, type: `cd ~`
     * This takes you to your home directory if you are not already there.
-    * The ~ is just a shortcut symbol that means home directory
-* Create a directory named cs110. On the command line, you can do this with the following command:
-    * mkdir cs110
-* Change your "current working directory" to be the cs110 directory. To do this, execute the following command:
-    * cd cs110
-* Confirm that you are in fact in the cs110 directory by typing the command:
-    * pwd
-* Create a directory within cs110.... name it lab1. "cd" into this new directory.
-* Type the command ‘python3’ to enter the Python Interactive Shell
-    * Note the prompt (**<<<**) followed by your cursor (**|**)
+    * The `~` is just a shortcut symbol that means home directory
+* Create a directory named `cs110`. On the command line, you can do this with the following command:
+    * `mkdir cs110`
+* Change your "current working directory" to be the `cs110` directory. To do this, execute the following command:
+    * `cd cs110`
+* Confirm that you are in fact in the `cs110` directory by typing the command:
+    * `pwd`
+* Create a directory within `cs110` nqmed `lab1`. `cd` into this new directory.
+* Type the command `python3` to enter the Python Interactive Shell
+    * Note the prompt (`>>>`) followed by your cursor (**|**)
     * This lets you know that you are in the Python shell, and that the interpreter is awaiting your input.
-        * **The python shell is different from the linux terminal.** Think of it as a special python shell inside the linux shell.
+        * **The Python shell is different from the Linux shell.** Think of it as a special Python shell inside the Linux shell.
     * Exit the shell with the exit() command
 * The shell environment is the place where you should try out various Python expressions and statements,
-    * HOWEVER, it is NOT the proper environment in which to write an entire program
+    * *However*, it is *not* the proper environment in which to write an entire program
 * In your interactive book, you can use the in-browser environment to write "snippets" of code, or Python scripts
-    * These are NOT complete programs
+    * These are *not* complete programs
 * In our class:
     * Complete programs will always be written in Python scripts
-    * Complete programs will have a **main()** function
-    * Complete programs will include an invocation of the **main()** function
-    * Each complete program will be saved in a separate file given a **camelCaseName** followed by a **.py** extension
-    * (e.g., **computeAverageProfit.py**)
-    * Note that file names should NEVER contain spaces
+    * Complete programs will have a `main()` function
+    * Complete programs will include an invocation of the `main()` function
+    * Each complete program will be saved in a separate file given a `camelCaseName` followed by a `.py` extension
+    * (e.g., `computeAverageProfit.py`)
+    * Note that file names should *never* contain spaces
 
 ## Part B: Writing the Code
 The first thing we are going to do is initialize our folder to work with github...**TBD**
 
 
-Now that we have our repository set up, we will edit the code. If you are not already familiar with a linux editor, please use gedit, which has several nice features for Python code development. Beware that gedit is a linux editor, and will not work on other OS's. For Windows or Mac, I recommend [Atom](https://atom.io/). You can use gedit to open a file  by typing, for example, the following into a linux command shell:
+Now that we have our repository set up, we will edit the code. If you are not already familiar with a Linux editor, please use gedit, which has several nice features for Python code development. Beware that gedit is a Linux editor, and will not work on other OS's. For Windows or Mac, I recommend [Atom](https://atom.io/). You can use gedit to open a file  by typing, for example, the following into a linux command shell:
 
 gedit lab1.py &
 
-If there is no file in the current folder named lab1.py, then gedit will create a new empty one for you (remember, you can check your current folder location with *'pwd'*). If the file does exist, it will edit the existing file. The ampersand at the end of the command says to run this application in the background. This will allows you to write some code, save it, then run it in the shell without quitting gedit. After making changes to a file, you can save it by clicking "Save" at the top of the gedit window, or with the hot key command `<ctrl-s>`. Note that if you have made changes to an open file, and those changes have not been saved, the file name across the top of the window will be preceded by an asterisk (for example, "\*lab1.py"). To exit from gedit, make sure your modifications are saved, and then type `<ctrl-q>` in the gedit window, or simply close the gedit window by clicking the “x” in the upper right hand corner.
+If there is no file in the current folder named `lab1.py`, then gedit will create a new empty one for you (remember, you can check your current folder location with `pwd`). If the file does exist, it will edit the existing file. The ampersand at the end of the command will run this application in the background. This will allows you to write some code, save it, then run it in the shell without quitting gedit. After making changes to a file, you can save it by clicking "Save" at the top of the gedit window, or with the hot key command `<ctrl-s>`. Note that if you have made changes to an open file, and those changes have not been saved, the file name across the top of the window will be preceded by an asterisk (for example, "\*lab1.py"). To exit from gedit, make sure your modifications are saved, and then type `<ctrl-q>` in the gedit window, or simply close the gedit window by clicking the “x” in the upper right hand corner.
 
-Open the accompanying lab1.py simple program with gedit.You keep the format, indentation, and capitalization EXACTLY as it is! You may use spaces or tabs to indent, but you have to be consistent. NOTE: Be aware that if you will be working on a windows machine at home, spaces are more cross platform compatible.
+Open the accompanying `lab1.py` simple program with gedit.You keep the format, indentation, and capitalization *exactly* as it is! You may use spaces or tabs to indent, but you have to be consistent. **Note:** Be aware that if you will be working on a Windows machine at home, spaces are more cross platform compatible.
 
 * Run your program by saving your file as lab1.py, and typing the following command
-    * python3 lab1.py
+    * `python3 lab1.py`
         * If you made an error when typing the program, you will see an error message
         * Fix the error and try again, if necessary - **ask for help if you need it!**
 * Make the following changes to your program and run it:
-    * Insert print statements after each line of the **main()** function that prints the value *and* type of the variable assigned to in the previous line
-    * Using the code I have given you as an example, make the following additions to your **main()** function:
+    * Insert print statements after each line of the `main()` function that prints the value *and* type of the variable assigned to in the previous line
+    * Using the code I have given you as an example, make the following additions to your `main()` function:
         * Ask the user to input how many times per week a class meets and save that in a variable called `classes_per_week`.
             * For example, our class meets 2 days a week
         * Calculate the cost per class by dividing the `cost_per_week` by the `classes_per_week` and save the result in a variable called `cost_per_class`
@@ -110,5 +110,5 @@ Open the accompanying lab1.py simple program with gedit.You keep the format, ind
 
 ## Part C: Submission
 * Required code naming and organization:
-    * lab1.py
+    * `lab1.py`
 * Submit to github somehow - still working on this part...
