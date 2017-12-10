@@ -1,7 +1,7 @@
 # Lab 1 - Getting Familiar with Your Environment
 
 CS 110 - Fall 2017
-Due Date: 5:00 p.m., Aug 31st, 2017
+Due Date: **5:00 p.m., Aug 31st, 2017**
 
 *All programs will be tested on the machines in the LNG103 lab. If your code does not run on the system in this lab, it is considered non-functioning EVEN IF IT RUNS ON YOUR PERSONAL COMPUTER. Always check that your code runs on the lab machines before submitting.*
 
